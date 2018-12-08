@@ -1,6 +1,6 @@
 {
   "name": "@hikaruna/table_first_normalizer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "htmlのtableDOMを第一正規化します(rospan, colspanを排除します)",
   "main": "index.js",
   "scripts": {
