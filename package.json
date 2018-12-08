@@ -1,6 +1,6 @@
 {
   "name": "@hikaruna/table-first-normalizer",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "htmlのtableDOMを第一正規化します(rowspan, colspanを排除します)",
   "main": "dist/table-first-normalizer.umd.js",
   "module": "dist/table-first-normalizer.esm.js",
