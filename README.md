@@ -1,32 +1,54 @@
 # TABLE FIRST NORMALIZER
-[![npm version](https://badge.fury.io/js/%40hikaruna%2Ftable_first_normalizer.svg)](https://badge.fury.io/js/%40hikaruna%2Ftable_first_normalizer)
+[![npm version](https://badge.fury.io/js/%40hikaruna%2Ftable-first-normalizer.svg)](https://badge.fury.io/js/%40hikaruna%2Ftable-first-normalizer)
 
-htmlのtableDOMを第一正規化します(rospan, colspanを排除します)
+htmlのtableDOMを第一正規化します(rowspan, colspanを排除します)
 
-## Usage
+## Instration
+
+```
+> npm i @hikaruna/table-first-normalizer
+```
 
 ### Webpack
 
 ```
-> npm i @hikaruna/table_first_normalizer
-```
-
-```
 // your_entrypoint.js
 
-const firstNormalize = require('@hikaruna/table_first_normalizer);
+const tableFirstNormalize = require('@hikaruna/table-first-normalizer);
 
+```
+
+### ScriptTag(github release hosting)
+
+```
+// your.html
+<script src="https://github.com/hikaruna/table-first-normalizer/releases/download/vX.Y.Z/table-first-normalizer.umd.js"></script>
+```
+
+
+### ScriptTag(self hosting)
+
+publish node_modules/@hikaruna/table-first-normalizer/dist/table-first-normalizer.umd.js to contentBase
+
+```
+// your.html
+<script src="table-first-normalizer.umd.js"></script>
+```
+
+## Usage
+
+```
 const table = document.querySelector('table');
-const firstNormalizedTable = firstNormalize(table);
+const firstNormalizedTable = tableFirstNormalize(table);
 document.querySelector('body').appendChild(firstNormalizedTable);
 ```
 
 ## Development
 
 ```
-> git clone table_first_normalizer
-> cd table_first_normalizer
-> npm i
-> npx webpack-dev-server
-> open localhost:8080
+> git clone table-first-normalizer
+> cd table-first-normalizer
+> npm install
+> npm run dev
+> open localhost:10001
 ```

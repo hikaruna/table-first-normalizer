@@ -62,8 +62,8 @@ const rowspanNormalize = (colspanNormalizedTable) => {
   return newTable;
 };
 
-const firstNormalize = (table) => {
+const tableFirstNormalize = (table) => {
   return rowspanNormalize(colspanNormalize(table));
 };
 
-module.exports = firstNormalize;
+export default tableFirstNormalize;

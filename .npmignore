@@ -1,4 +1,4 @@
-/dist
+/src
 /test
-/webpack.config.js
+/*.config.js
 /.vscode

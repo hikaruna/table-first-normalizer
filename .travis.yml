@@ -1,0 +1,10 @@
+language: node_js
+node_js: 11.0.0 
+cache: npm
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: "dist/table-first-normalizer.umd.js"
+  skip_cleanup: true
+  on:
+    tags: true
