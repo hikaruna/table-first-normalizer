@@ -1,4 +1,6 @@
 # TABLE FIRST NORMALIZER
+[![npm version](https://badge.fury.io/js/%40hikaruna%2Ftable_first_normalizer.svg)](https://badge.fury.io/js/%40hikaruna%2Ftable_first_normalizer)
+
 htmlのtableDOMを第一正規化します(rospan, colspanを排除します)
 
 ## Usage
