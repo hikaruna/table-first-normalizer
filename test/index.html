@@ -1,5 +1,14 @@
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="table-first-normalizer.umd.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const table = document.querySelector('table');
+      const firstNormalizedTable = tableFirstNormalize(table);
+      document.querySelector('article').append(firstNormalizedTable);
+    });
+  </script>
 </head>
 
 <article class="container">
